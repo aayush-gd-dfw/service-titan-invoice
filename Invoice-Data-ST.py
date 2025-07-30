@@ -142,14 +142,18 @@ def fetch_and_store_customers():
         file = svc.files().create(body=meta, media_body=media).execute()
         fid = file["id"]
 
-    page_size = 500
     page = load_last_page()
     all_batches = []
-
+    
+    # Initialize token and headers before the loop
+    access_token = get_access_token()
+    headers = {"Authorization": f"Bearer {access_token}", "ST-App-Key": APP_KEY}
+    
     while True:
         if page % 10 == 1:
             access_token = get_access_token()
             headers = {"Authorization": f"Bearer {access_token}", "ST-App-Key": APP_KEY}
+
 
         url = f"{BASE_URL}?page={page}&pageSize={page_size}"
         try:
