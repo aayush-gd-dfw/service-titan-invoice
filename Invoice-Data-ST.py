@@ -32,7 +32,7 @@ PAGE_SIZE   = 500
 PAGE_BATCH  = 100  
 TOKEN_URL         = "https://auth.servicetitan.io/connect/token"
 #EXPORT_URL         = f"https://api.servicetitan.io/telecom/v3/tenant/{TENANT_ID}/calls"
-CLIENT_SECRET_FILE = r"C:\Users\Aayush Patil\Downloads\client_secret_740594783744-bgsb4ditlgb5u4b7d63sosj8ku7l50ba.apps.googleusercontent.com.json"
+CLIENT_SECRET_FILE = r"client_secret_740594783744-bgsb4ditlgb5u4b7d63sosj8ku7l50ba.apps.googleusercontent.com.json"
 TOKEN_PICKLE       = "token.pkl"              # cached user credentials (auto‑created)
 SCOPES             = ["https://www.googleapis.com/auth/drive.file"]
 
