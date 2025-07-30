@@ -28,7 +28,7 @@ GDRIVE_FOLDER_ID  = "1t-vJ8IV2b4ebHA1T2SCoPLUMT26JgzjM"
 CSV_FILENAME      = "invoice_data_v2.csv"
 SINCE_ISO          = "2000-01-01T00:00:00Z"  
 # ── Constants ─────────────────────────────────────────────────────────────────
-PAGE_SIZE   = 500
+page_size   = 500
 PAGE_BATCH  = 100  
 TOKEN_URL         = "https://auth.servicetitan.io/connect/token"
 #EXPORT_URL         = f"https://api.servicetitan.io/telecom/v3/tenant/{TENANT_ID}/calls"
